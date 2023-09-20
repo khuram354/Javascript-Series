@@ -1,27 +1,27 @@
-// const score = 400;
-// const balance = new Number(100);
-// console.log(balance); // Expected Output: [Number: 100]
-// console.log(balance.toString());
-// console.log(typeof balance.toString()); // converting a number data type into string
+const balance = new Number(100);
+console.log(balance); // Expected Output: [Number: 100]
+console.log(balance.toString()); // converting a number data type into string
+console.log(typeof balance.toString()); // data type will be string
 
 // The parseInt() method parses the given string argument and returns an integer number parsed from the string.
-// let num3 = Number.parseInt("32.65");
-// console.log(num3); // Expected Output: 32
-// // If an integer can't be parsed from the given string, the method returns NaN.
-// let num4 = Number.parseInt("Hello, World!");
-// console.log(num4); // Expected Output: NaN
-// let num5 = 15;
-// console.log(num5.toString(2)); // Optional parameter of Base 2 Expected Output will be 1111
+let num3 = Number.parseInt("32.65");
+console.log(num3); // Expected Output: 32
+let num5 = 15;
+console.log(num5.toString(2)); // Optional parameter of Base 2 Expected Output will be 1111
 
-// let num6 = 68;
-// console.log(num6.toFixed(2)); // To fix a number showing digits after decimal point
+// If an integer can't be parsed from the given string, the method returns NaN.
+let num4 = Number.parseInt("Hello, World!");
+console.log(num4); // Expected Output: NaN
 
-// const otherNumber = 289.6541;
-// console.log(otherNumber.toPrecision(3)); // To precise the number at certain digits
+let num6 = 68;
+console.log(num6.toFixed(2)); // To fix a number showing digits after decimal point
 
-// const hundreds = 1000000;
-// console.log(hundreds.toLocaleString()); // To display a number in local format of US
-// console.log(hundreds.toLocaleString("en-IN")); // To display a number in local format of India/Pakistan
+const otherNumber = 289.6541;
+console.log(otherNumber.toPrecision(3)); // To precise the number at certain digits
+
+const hundreds = 1000000;
+console.log(hundreds.toLocaleString()); // To display a number in local format of US
+console.log(hundreds.toLocaleString("en-IN")); // To display a number in local format of India/Pakistan
 
 // +++++++++++++++++++++++++++++++++++++ Maths ++++++++++++++++++++++++++++++++++++++
 
