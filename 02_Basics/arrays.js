@@ -7,6 +7,7 @@
 const fruits = [];
 console.log(typeof fruits); // 'object'
 console.log(fruits); // []
+console.log(fruits[1]); // undefined
 
 // To check whether its an array or not we use following methods;
 let typeData = Array.isArray(fruits);
