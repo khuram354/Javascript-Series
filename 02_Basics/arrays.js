@@ -86,3 +86,12 @@ console.log("Removed this element:", shifted); // Removed this element: angel
 // The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array
 myFish.unshift("Snacky");
 console.log(myFish); // [ 'Snacky', 'clown', 'mandarin', 'surgeon' ]
+
+// Deleting array elements  +++ WE SHOULD AVOID DELETE OPERATOR +++
+// When you delete an array element, the array length is not affected. This holds even if you delete the last element of the array.
+// When the delete operator removes an array element, that element is no longer in the array.
+
+const colors = ["red", "green", "blue", "orange", "black", "white"];
+delete colors[1];
+console.log(colors); // [ 'red', <1 empty item>, 'blue', 'orange', 'black', 'white' ]
+console.log(colors.length); // 6 this means length remains same
