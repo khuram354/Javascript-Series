@@ -51,3 +51,36 @@ console.log(fruits.length - 1); // 4 i.e last index of array having lengh 5 will
 
 // To access the last index in an array we use lengh-1
 console.log(fruits[fruits.length - 1]); // mango
+
+// tosring()
+let outPut = fruits.toString();
+console.log(outPut); // "banana,apple,grapes,guava,mango"
+console.log(typeof outPut); // string
+
+// The join() method of Array instances creates and returns a new string by concatenating all of the elements in this array, separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator.
+const elements = ["Fire", "Air", "Water"];
+
+console.log(elements.join());
+// Expected output: "Fire,Air,Water"
+console.log(elements.join(""));
+// Expected output: "FireAirWater"
+console.log(elements.join("-"));
+// Expected output: "Fire-Air-Water"
+
+// The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.
+const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
+
+console.log(plants.pop()); // Expected output: "tomato"
+console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
+plants.pop();
+console.log(plants); // Expected output: Array ["broccoli", "cauliflower", "cabbage"]
+
+// The shift() method of Array instances removes the first element from an array and returns that removed element. This method changes the length of the array.
+const myFish = ["angel", "clown", "mandarin", "surgeon"];
+console.log("myFish before:", myFish); // myFish before: ['angel', 'clown', 'mandarin', 'surgeon']
+const shifted = myFish.shift();
+console.log("myFish after:", myFish); // myFish after: ['clown', 'mandarin', 'surgeon']
+console.log("Removed this element:", shifted); // Removed this element: angel
+
+// The unshift() method of Array instances adds the specified elements to the beginning of an array and returns the new length of the array
