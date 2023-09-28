@@ -95,3 +95,8 @@ const colors = ["red", "green", "blue", "orange", "black", "white"];
 delete colors[1];
 console.log(colors); // [ 'red', <1 empty item>, 'blue', 'orange', 'black', 'white' ]
 console.log(colors.length); // 6 this means length remains same
+colors[1] = "green";
+console.log(colors); // ["red", "green", "blue", "orange", "black", "white"]
+
+let sortColor = colors.sort();
+console.log(sortColor); // [ 'black', 'blue', 'green', 'orange', 'red', 'white' ]
