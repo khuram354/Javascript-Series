@@ -99,4 +99,34 @@ colors[1] = "green";
 console.log(colors); // ["red", "green", "blue", "orange", "black", "white"]
 
 let sortColor = colors.sort();
-console.log(sortColor); // [ 'black', 'blue', 'green', 'orange', 'red', 'white' ]
+console.log(sortColor); // acending sort output: [ 'black', 'blue', 'green', 'orange', 'red', 'white' ]
+
+let desSortColor = sortColor.reverse();
+console.log(desSortColor); // decending sort output: [ 'white', 'red', 'orange', 'green', 'blue', 'black' ]
+
+// sorting the numbers will not give the expected result
+let num = [100, 4, 202, 300, 50, 600, 8, 60];
+console.log(num.sort()); // [100, 202, 300, 4, 50, 60, 600, 8]
+
+// Fucntion compare with sort () is better option to sort the numbers.
+// Example of sorting numbers in acending order
+let numSort = num.sort((a, b) => a - b);
+console.log(numSort); // [4, 8, 50, 60, 100, 202, 300, 600]
+
+// Example of Sorting numbers in decending order
+let numSortDescending = num.sort((a, b) => b - a);
+console.log(numSortDescending); // [600, 300, 202, 100, 60, 50, 8, 4]
+
+// Sorting an array of objects in JavaScript can be done by providing a custom comparison function to the sort() method. This function will determine the sorting order based on a property of the objects within the array. Here's an example of how to sort an array of objects by a specific property in ascending and descending order:
+let people = [
+    { name: "Alice", age: 30 },
+    { name: "Bob", age: 25 },
+    { name: "Eve", age: 35 },
+];
+people.sort((a, b) => a.age - b.age);
+console.log(people);
+//  Expected OutPut [
+//   { name: 'Bob', age: 25 },
+//   { name: 'Alice', age: 30 },
+//   { name: 'Eve', age: 35 }
+// ]
